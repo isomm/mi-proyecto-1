@@ -4,61 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nombre Apellido</title>
+    <title>Isolina Mejias</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <a href="#inicio"> 
-       <img src="img/eidoslogo.png" alt="logo Eidos"> 
-        </a> 
+      <img src="img/eidoslogo.png" alt="logo Eidos" class="logo">
+      <a href="https://www.eidosglobal.org/" target="blank"></a>
+              
         <nav>
         <ul id="menu">
-            <li class="menu-item"> <a      
-          href="#inicio">Inicio</a> </li>
-           <li class="menu-item"> <a href="#contacto">Contacto</a></li>
+            <li class="menu-itemactive"> 
+                <a href="#inicio">Inicio</a> 
+            </li>
+           <li class="menu-item">
+               <a href="#contacto">Contacto</a>
+               <a href="#contacto" aria-label="Ir a la sección de contacto">
+            </li> 
         </ul>  
+            
         </nav>    
     </header>
     <main>
-        <section id="inicio"></section>
-        <figure>
-            <img src="http://placekitten.com/400/400" alt="foto del michi"> 
-         </figure>
-         <article>
-            <h1>Hola soy el michi</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem aliquam ipsa voluptates iure delectus, voluptatem nisi id recusandae impedit sunt sed odio eum quam accusantium. Ducimus vero velit illo obcaecati?</p>
-         </article>
-         <a href="">Descargar el CV</a>
-       </section>
-
-        <section id="contacto">
-        <article>
-            <h2>Hablemos!</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nobis veritatis facilis amet saepe nemo quo ut magnam aut, nostrum iste quisquam quaerat ad nam rem accusamus expedita! Eum, ea!</p>
+            
+          <section id="inicio">
+         <article class="hola">
+        <img src="img/isolina.jpg" class="imgRedonda"> 
+            <h1>Hola soy Isolina</h1>
+       <p>Soy una persona de caracter abierto y agradable, capaz de tratar con cualquier público , analizar y respetar opiniones, estableciendo así buenas relaciones, ya que poseo la capacidad para despertar empatia,confianza y seguridad.
+        Siento pasión por lo que hago y lo transmito a mi entorno.
+        Soy comunicativa y puedo generar sinergia, valores y emociones positivas.
+        Me inclino a la dinamica , se trabajar bajo presion, tengo habilidades de liderazgo , por lo que asumo retos con facilidad y me gusta el trabajo en equipo.</p>
+        <a href="btn" aria-label="Descargar cv" class="btn">Descargar mi CV</a>
+       
         </article>
-        <ul>
-            <li> <a href=""><img src="img/mail.png" alt="" ></a> </li>
-            <li> <a href=""><img src="img/github.png" alt="" ></a> </li>
-            <li> <a href=""><img src="img/linkedin.png" alt="" ></a></li>
-        </ul>
+        </section>
+        <section id="contacto">
+        <article class="hablemos">
+            <h2>Hablemos!</h2>
+            <p>Si quieres conocer acerca de mi, te invito a visitar mis cuentas, tambien esta mi dirección Email, para contactarme.</p>
+        </article>
+        </section>
 
-
-        </section>   
-
-
-
+         <section id="contactlinks">
+            <ul>
+         <li> <a href="mailto:isolinamejias1071@gmail.com" target="blank" aria label ="Enviar mail">
+                <img src="img/mail.png" alt="email" width="120px">
+                <i class="bi bi envelope icono"></i>
+            </a>
+         </li>
+         <li> <a href="https://github.com/isomm/mi-proyecto-1.git" target="blank" aria label= "ir al perfil de github">
+                <img src="img/github.png" alt="logo github" width="120px">
+            </a> 
+         </li>
+         <li> <a href="https://www.linkedin.com/in/isolinamejias/" target="blank" aria label="ir al perfil de linkedin">
+                <img src="img/linkedin.png" alt="logo linkedin" width="120px">
+            </a>
+         </li>
+         </ul>
+         </section>   
     </main>
-
-    
     <footer>
-        <p>Codigo Latan</p>
+        <small><i class="person"></i><p>Iso -Codigo Latan</p></small>
     </footer>
-
-    <!-- La estructura básica y la vinculación con CSS estan listas. A codear! 💪  -->
-    <!-- En este archivo escriban su HTML -->
-
+     
 </body>
 </html>

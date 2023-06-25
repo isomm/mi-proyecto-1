@@ -1,14 +1,11 @@
-/* En este archivo escriban su CSS */
+/* Font */
 
 /* Fonts */
 /* Importar aquí la font */
-
-
-
+/*Estilos Generales */
 /* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
 *  cuyos valores asigna por defecto el navegador.
 */
-
 /* Reset */
 * {
     box-sizing: border-box;
@@ -17,25 +14,155 @@
     /* Para que el scrolleo en la one page sea suave */
     scroll-behavior: smooth;
 }
-
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+    background-color: #fbfbfb;
+    color: rgba(175, 89, 158, 0.3)#0f0f0f;
+    min-height: 100%;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16;
+    height: 90;
+    width: 100%;
+    background-color: #fbfbfb;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 3px 10px -5px #fbfbfb;
+}
+main{
+    max-width: 1200px;
+    margin: auto;
+}
 /* Para quitar los puntos a los items de listas */
 ul {
     list-style: none;
 }
-
-/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+li{
+    list-style: none;
+    display: flex;
+}
+ /* Para que los enlaces hereden el color de texto y no tengan subrayado */
+ul#menu {
+    display: flex;
+    font-size: 20px;
+}
+      
+li.menu-item {
+    padding: 16px;
+    display: inline-block;
+}
+        
+li.menu-item:hover
+a.btn :hover{
+    background: rgba(175, 89, 158, 0.5);
+}
+.logo{
+    width: 120px;
+     border-radius: 2px; 
+}
+/*section inicio*/
+section#inicio{
+    justify-content: space-around;
+}
 a {
     text-decoration: none;
     color: inherit;
 }
+p{
+    margin: 16px 0;
+}
+
+h1{
+    font-size: 36px;
+    text-align: center;
+}
+h2{
+    font-size: 28px;
+    text-align: center;
+}
+
+
+article.hola{
+    background: #fbfbfb;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20%;
+    min-width: 600px;
+    
+}
+a.btn{
+    background-color: #af599e;
+    color: #fbfbfb;
+    padding: 12px 20px;
+    border-radius: 30px;
+    display: inline-block;
+    font-size: 20px;
+
+}
+/*seccion Contacto */
+section#contacto{
+    text-align: center;
+    min-height: 100vh;
+}
+
+article.presentacion{
+    width: 100%;
+    text-align: center;
+    padding: 20px; ;
+}
+
+article.hablemos{
+    background: rgba(175, 89, 158, 0.3);
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    min-width: 600px;
+}
+
+/*seccion contactlinks */
+section#contactlinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16;
+    min-height: 100vh;
+    padding-top: 120px;
+    list-style-type: none;
+}
+.imgRedonda{
+    border-radius: 150%;
+    width: 400px;
+    height: 400px;
+}
+.menu-itemactive{
+    background: rgba(175, 89, 158, 0.5);
+}
+footer{
+    background: #af599e;
+    height: 90px;
+    font-size: 25px;
+    color: #fbfbfb;
+    display: inline-block;
+      
+}
+.person{
+    text-align: center;
+    position: fixed;
+}
+
+    
+/* Para quitar los puntos a los items de listas */
 
 /* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
 *  el margin: auto; para tenerlo centrado fácilmente ;)
 */
-main {
-    max-width: 1200px;
-    margin: auto;
-}
 
 /* Recomendaciones! 
 *  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
