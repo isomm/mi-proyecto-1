@@ -19,20 +19,18 @@ body{
     font-size: 18px;
     line-height: 1.2;
     background-color: #fbfbfb;
-    color: rgba(175, 89, 158, 0.3)#0f0f0f;
-    min-height: 100%;
+    
 }
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16;
-    height: 90;
+    padding: 16px;
+    height: 90px;
     width: 100%;
     background-color: #fbfbfb;
     position: fixed;
     top: 0;
-    left: 0;
     box-shadow: 0 3px 10px -5px #fbfbfb;
 }
 main{
@@ -52,8 +50,8 @@ ul#menu {
     display: flex;
     font-size: 20px;
 }
-      
-li.menu-item {
+  
+li.menu-item{
     padding: 16px;
     display: inline-block;
 }
@@ -70,7 +68,11 @@ a.btn :hover{
 section#inicio{
     justify-content: space-around;
 }
-a {
+section#contact ul{
+ display: flex ;  
+ 
+}
+a {    
     text-decoration: none;
     color: inherit;
 }
@@ -93,8 +95,7 @@ article.hola{
     text-align: center;
     padding: 20px;
     border-radius: 20%;
-    min-width: 600px;
-    
+           
 }
 a.btn{
     background-color: #af599e;
@@ -114,7 +115,7 @@ section#contacto{
 article.presentacion{
     width: 100%;
     text-align: center;
-    padding: 20px; ;
+    
 }
 
 article.hablemos{
@@ -122,7 +123,7 @@ article.hablemos{
     text-align: center;
     padding: 20px;
     border-radius: 20px;
-    min-width: 600px;
+    
 }
 
 /*seccion contactlinks */
@@ -131,9 +132,8 @@ section#contactlinks{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 16;
-    min-height: 100vh;
-    padding-top: 120px;
+    padding: 16px;
+    padding-top: 10px;
     list-style-type: none;
 }
 .imgRedonda{
@@ -150,7 +150,8 @@ footer{
     font-size: 25px;
     color: #fbfbfb;
     display: inline-block;
-      
+    width: 100%;
+    text-align: center;
 }
 .person{
     text-align: center;
